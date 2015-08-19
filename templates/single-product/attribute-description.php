@@ -11,8 +11,4 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly
 }
 
-echo $label; ?>
-
-<br>
-
-<small><?php echo $attribute_description; ?></small>
+echo $label; ?> <a href="#" class="woocommerce-attribute-icon" data-description="<?php echo $attribute_description; ?>">?</a>
