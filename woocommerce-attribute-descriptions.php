@@ -28,7 +28,7 @@
 			add_action('product_page_product_attributes', array($this, 'add_attributes_description_field_to_screen') );
 			add_action('woocommerce_attribute_updated', array($this, 'save_attribute_description'), 10 );
 			add_filter('woocommerce_attribute_label', array($this, 'display_attribute_description'), 10, 3);
-			add_action('woocommerce_after_variations_form', array($this, 'display_attribute_modal') );
+			add_action('woocommerce_after_add_to_cart_form', array($this, 'display_attribute_modal') );
 			add_action('wp_enqueue_scripts', array($this, 'enqueue_scripts') );
 			
 		}
@@ -139,6 +139,11 @@
 		
 		public function display_attribute_modal() {
 			
+			global $product;
+			
+			if( ! $product->is_type('variable') )
+				return;
+			
 			wc_get_template( 'single-product/attribute-description-modal.php', array(
 					'message' => '',
 				), '', $this->plugin_path() . '/templates/' );
@@ -147,11 +152,16 @@
 		
 		public function enqueue_scripts() {
 			
-			$suffix = defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ? '' : '.min';
+			if( is_product() ) {
+				
+				$suffix = defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ? '' : '.min';
 			
-			wp_enqueue_script('woocommerce_attribute_descriptions', $this->plugin_url() . '/assets/js/woocommerce-attribute-descriptions' . $suffix . '.js', array('jquery'), '1.0.0', true);
+				wp_enqueue_script('woocommerce_attribute_descriptions', $this->plugin_url() . '/assets/js/woocommerce-attribute-descriptions' . $suffix . '.js', array('jquery'), '1.0.0', true);
 			
-			wp_enqueue_style('woocommerce_attribute_descriptions', $this->plugin_url() . '/assets/css/woocommerce-attribute-descriptions.css', array(), '1.0.0');
+				wp_enqueue_style('woocommerce_attribute_descriptions', $this->plugin_url() . '/assets/css/woocommerce-attribute-descriptions.css', array(), '1.0.0');
+			
+				
+			}
 			
 		}
 		
