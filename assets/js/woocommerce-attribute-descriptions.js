@@ -10,7 +10,7 @@ jQuery(document).ready(function($) {
 	
 	$(this).on('click', '.woocommerce-attribute-modal, .woocommerce-attribute-close', function(e) {
 		
-		if(e.target != this) return;
+		if(e.target !== this) { return; }
 		
 		e.preventDefault();
 		
