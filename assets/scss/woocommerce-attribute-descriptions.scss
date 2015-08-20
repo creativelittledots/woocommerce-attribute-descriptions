@@ -34,11 +34,12 @@
 		left: 50%;
 		margin-left: -220px;
 		margin-top: -120px;
-		min-width: 400px;
+		width: 400px;
 		min-height: 200px;
 		background: white;
 		padding: 20px;
 		z-index: 99999;
+		box-shadow: 1px 1px 8px rgba(0,0,0,0.5);
 		
 		p {
 			

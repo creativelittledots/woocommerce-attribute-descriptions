@@ -8,7 +8,9 @@
 	 * Author URI: http://creativelittledots.co.uk
 	 *
 	 * Text Domain: woocommerce-attribute-descriptions
-	 * Domain Path: /i18n/languages/
+	 * Domain Path: /languages/
+	 * License: GPLv2
+	 * License URI: https://www.gnu.org/licenses/gpl-2.0.html
 	 *
 	 */
 	
