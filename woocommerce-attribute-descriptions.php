@@ -110,6 +110,9 @@
 		
 		public function display_attribute_description($label, $name, $product) {
 			
+			if( ! is_product() || is_admin() )
+				return $label;
+			
 			global $wpdb;
 			
 			$attribute_id = $wpdb->get_var( $wpdb->prepare( "SELECT attribute_id FROM {$wpdb->prefix}woocommerce_attribute_taxonomies WHERE attribute_name = %s;", $name ) );
