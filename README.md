@@ -12,11 +12,11 @@ Sometimes you need to provide more information regarding product attributes, esp
 
 Simple enter some descriptive content in to the newly added text area on a Product Attribute.
 
-![Example 2](screenshots/example-1.png?raw=true "Example 2")
+![Example 2](screenshots/example-2.png?raw=true "Example 2")
 
 When adding the Attribute to a Product, lets say a Variable Product for example, you will see a question mark next the attribute name on the Single Product template.
 
-![Example 3](screenshots/example-1.png?raw=true "Example 3")
+![Example 3](screenshots/example-3.png?raw=true "Example 3")
 
 When you click on the question mark you will be able to read the Product Attribute content.
 
