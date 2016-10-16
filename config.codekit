@@ -79,6 +79,39 @@
 		"randomFootnoteNumbers": 0,
 		"useCompatibilityMode": 0
 		},
+	"\/screenshots\/example-1.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 224890,
+		"inputAbbreviatedPath": "\/screenshots\/example-1.png",
+		"outputAbbreviatedPath": "\/screenshots\/example-1.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/screenshots\/example-2.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 150866,
+		"inputAbbreviatedPath": "\/screenshots\/example-2.png",
+		"outputAbbreviatedPath": "\/screenshots\/example-2.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/screenshots\/example-3.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 171711,
+		"inputAbbreviatedPath": "\/screenshots\/example-3.png",
+		"outputAbbreviatedPath": "\/screenshots\/example-3.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/templates\/single-product\/attribute-description-modal.php": {
 		"fileType": 8192,
 		"ignore": 0,
