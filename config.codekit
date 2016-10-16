@@ -1,6 +1,6 @@
 {
 "CodeKitInfo": "This is a CodeKit 2.x project configuration file. It is designed to sync project settings across multiple machines. MODIFYING THE CONTENTS OF THIS FILE IS A POOR LIFE DECISION. If you do so, you will likely cause CodeKit to crash. This file is not useful unless accompanied by the project that created it in CodeKit 2. This file is not backwards-compatible with CodeKit 1.x. For more information, see: http:\/\/incident57.com\/codekit",
-"creatorBuild": "19115",
+"creatorBuild": "19127",
 "files": {
 	"\/admin\/views\/attribute-description.php": {
 		"fileType": 8192,
@@ -589,10 +589,6 @@
 			}
 		},
 	"jsLintFlags2": {
-		"ass": {
-			"active": false,
-			"flagValue": -1
-			},
 		"bitwise": {
 			"active": 0,
 			"flagValue": -1
@@ -601,92 +597,36 @@
 			"active": 1,
 			"flagValue": -1
 			},
-		"closure": {
-			"active": false,
-			"flagValue": -1
-			},
-		"continue": {
-			"active": false,
-			"flagValue": -1
-			},
-		"debug": {
-			"active": false,
+		"couch": {
+			"active": 0,
 			"flagValue": -1
 			},
 		"devel": {
 			"active": 0,
 			"flagValue": -1
 			},
-		"eqeq": {
-			"active": false,
+		"es6": {
+			"active": 0,
 			"flagValue": -1
 			},
-		"evil": {
-			"active": false,
+		"eval": {
+			"active": 0,
 			"flagValue": -1
 			},
-		"forin": {
-			"active": false,
+		"for": {
+			"active": 0,
 			"flagValue": -1
-			},
-		"indent": {
-			"active": false,
-			"flagValue": 4
 			},
 		"maxlen": {
 			"active": 0,
 			"flagValue": 150
 			},
-		"newcap": {
-			"active": false,
-			"flagValue": -1
-			},
 		"node": {
 			"active": 0,
 			"flagValue": -1
 			},
-		"nomen": {
-			"active": false,
-			"flagValue": -1
-			},
-		"plusplus": {
-			"active": false,
-			"flagValue": -1
-			},
-		"properties": {
-			"active": false,
-			"flagValue": -1
-			},
-		"regexp": {
-			"active": false,
-			"flagValue": -1
-			},
-		"rhino": {
-			"active": false,
-			"flagValue": -1
-			},
-		"sloppy": {
-			"active": false,
-			"flagValue": -1
-			},
-		"stupid": {
-			"active": false,
-			"flagValue": -1
-			},
-		"sub": {
-			"active": false,
-			"flagValue": -1
-			},
-		"todo": {
-			"active": false,
-			"flagValue": -1
-			},
-		"unparam": {
-			"active": false,
-			"flagValue": -1
-			},
-		"vars": {
-			"active": false,
+		"this": {
+			"active": 0,
 			"flagValue": -1
 			},
 		"white": {
