@@ -2,7 +2,7 @@
 	
 	/**
 	 * Plugin Name: WooCommerce Attribute Descriptions
-	 * Description: A tool to add descriptions to attributes
+	 * Description: Extends WooCommerce and adds customisable descriptions to Product Attributes on Variable Products
 	 * Version: 1.0.0
 	 * Author: Creative Little Dots
 	 * Author URI: http://creativelittledots.co.uk

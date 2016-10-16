@@ -1,12 +1,12 @@
-<div class="woocommerce-attribute-modal">
+<div class="wc-attribute-modal js-wc-attribute-modal">
 	
-	<div class="message-container">
+	<div class="wc-attribute-modal__container">
 		
-		<a href="#" class="woocommerce-attribute-close" data-description="<?php echo $attribute_description; ?>">X</a>
+		<a href="#" class="wc-attribute-close js-wc-attribute-close" data-description="<?php echo $attribute_description; ?>">X</a>
 		
-		<h4><?php _e('Additional Information', 'woocommerce-attribute-descriptions'); ?></h4>
+		<h4 class="wc-attribute-modal__title"><?php _e('Additional Information', 'woocommerce-attribute-descriptions'); ?></h4>
 	
-		<p class="message"></p>
+		<p class="wc-attribute-modal__message js-wc-attribute-message"></p>
 		
 	</div>
 	

@@ -1,6 +1,12 @@
-.woocommerce-attribute-icon, .woocommerce-attribute-close {
+.woocommerce div.product form.cart .variations label {
 	
-	background: grey;
+	display: inline-flex;
+	
+}
+
+.wc-attribute-icon, .wc-attribute-close {
+	
+	background-color: #a46497;
 	border-radius: 50px;
 	padding: 5px 10px;
 	font-size: 0.7rem;
@@ -8,16 +14,16 @@
 	color: white;
 	margin-left: 0.3rem;
 	text-decoration: none !important;
+	display: table;
+	
+	&:hover {
+		color: white;
+		background-color: #935386;
+	}
 	
 }
 
-.woocommerce div.product form.cart .variations label {
-	
-	display: inline-flex;
-	
-}
-
-.woocommerce-attribute-modal {
+.wc-attribute-modal {
 	
 	display: none;
 	position: fixed;
@@ -28,11 +34,17 @@
 	z-index: 99998;
 	background-color: rgba(0,0,0,0.5);
 	
-	h4 {
+	&__title {
 		margin: 0 0 1rem 0;
 	}
 	
-	.message-container {
+	&__message {
+		
+		margin: 0;
+		
+	}
+	
+	&__container {
 		
 		position: absolute;
 		top: 50%;
@@ -46,19 +58,12 @@
 		z-index: 99999;
 		box-shadow: 1px 1px 8px rgba(0,0,0,0.5);
 		
-		p {
-			
-			margin: 0;
-			
-		}
-		
-		.woocommerce-attribute-close {
+		.wc-attribute-close {
 			position: absolute;
 			top: -12px;
 			right: -12px;
 			margin: 5px 5px 0 0;
 			padding: 5px 9px;
-			background: red;
 		}
 		
 	}
