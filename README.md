@@ -20,6 +20,10 @@ When adding the Attribute to a Product, lets say a Variable Product for example,
 
 When you click on the question mark you will be able to read the Product Attribute content.
 
+## Features
+
+All of the templates in the templates/ folder are overridable by including the file(s) in your theme folder.
+
 ## Installation
 
 1. Upload the plugin to the **/wp-content/plugins/** directory
