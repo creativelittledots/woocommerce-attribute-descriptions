@@ -6,7 +6,7 @@ Sometimes you need to provide more information regarding product attributes, esp
 
 **Note:** This only works with attributes that are added via Products > Attributes and does not currently work with arbitrary attributes added at Single Product level.
 
-## Screenshot
+## How it works
 
 ![Example 1](screenshots/example-1.png?raw=true "Example 1")
 
