@@ -7,7 +7,8 @@
 .wc-attribute-icon, .wc-attribute-close {
 	
 	background-color: #a46497;
-	border-radius: 50px;
+	border-radius: 50%;
+	width: 20px;
 	padding: 5px 10px;
 	font-size: 0.7rem;
 	line-height: 0.9rem;
@@ -21,6 +22,10 @@
 		background-color: #935386;
 	}
 	
+}
+
+.wc-attribute-icon-description {
+	display: none;
 }
 
 .wc-attribute-modal {

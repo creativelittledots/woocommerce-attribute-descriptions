@@ -27,10 +27,10 @@
 		
 		public function __construct() {
 			
-			add_action('product_page_product_attributes', array($this, 'add_attributes_description_field_to_screen') );
+			add_action('woocommerce_after_edit_attribute_fields', array($this, 'add_attributes_description_field_to_screen') );
 			add_action('woocommerce_attribute_updated', array($this, 'save_attribute_description'), 10 );
 			add_filter('woocommerce_attribute_label', array($this, 'display_attribute_description'), 10, 3);
-			add_action('woocommerce_after_add_to_cart_form', array($this, 'display_attribute_modal') );
+			add_action('woocommerce_after_main_content', array($this, 'display_attribute_modal') );
 			add_action('wp_enqueue_scripts', array($this, 'enqueue_scripts') );
 			
 		}
@@ -55,27 +55,7 @@
 			
 			$attribute_description = isset($_POST['attribute_description']) ? $_POST['attribute_description'] : (isset($attribute_descriptions[$attribute_id]) ? $attribute_descriptions[$attribute_id] : '');
 			
-			ob_start();
-			
 			include('admin/views/attribute-description.php');
-			
-			$html = $this->sanitize_output(ob_get_contents());
-			
-			ob_end_clean();
-			
-			?>
-			
-			<script>
-			
-			jQuery(document).ready(function($) {
-				
-				$('<?php echo $html; ?>').appendTo('table.form-table tbody');
-				
-			});
-			
-			</script>
-			
-			<?php
 			
 		}
 		
@@ -102,7 +82,7 @@
 			
 			$attribute_descriptions = get_option('attribute_descriptions') ? get_option('attribute_descriptions') : array();
 			
-			$attribute_descriptions[$attribute_id] = wc_clean( stripslashes( $_POST['attribute_description'] ) );
+			$attribute_descriptions[$attribute_id] = stripslashes( $_POST['attribute_description'] );
 			
 			update_option('attribute_descriptions', $attribute_descriptions);
 			
@@ -123,19 +103,13 @@
 				
 				$attribute_description = $attribute_descriptions[$attribute_id];
 				
-				ob_start();
-				
-				wc_get_template( 'single-product/attribute-description.php', array(
+				$label = wc_get_template_html( 'single-product/attribute-description.php', array(
 					'label' => $label,
 					'attribute_description' => $attribute_description,
 					'name' => $name,
 					'product' => $product,
 				), '', $this->plugin_path() . '/templates/' );
-				
-				$label = ob_get_contents();
-				
-				ob_end_clean();
-				
+
 			}
 			
 			return $label;
@@ -145,9 +119,6 @@
 		public function display_attribute_modal() {
 			
 			global $product;
-			
-			if( ! $product->is_type('variable') )
-				return;
 			
 			wc_get_template( 'single-product/attribute-description-modal.php', array(
 					'message' => '',

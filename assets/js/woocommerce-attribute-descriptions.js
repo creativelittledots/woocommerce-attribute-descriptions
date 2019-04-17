@@ -4,7 +4,7 @@ jQuery(document).ready(function($) {
 		
 		e.preventDefault();
 		
-		$('.js-wc-attribute-modal').find('.js-wc-attribute-message').text( $(this).data('description') ).end().fadeToggle(300);
+		$('.js-wc-attribute-modal').find('.js-wc-attribute-message').html( $(this).find('.js-attribute-description').html() ).end().fadeToggle(300);
 		
 	});
 	
