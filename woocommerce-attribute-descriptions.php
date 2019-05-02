@@ -120,9 +120,13 @@
 			
 			global $product;
 			
-			wc_get_template( 'single-product/attribute-description-modal.php', array(
-					'message' => '',
-				), '', $this->plugin_path() . '/templates/' );
+			if( is_product() ) {
+			
+				wc_get_template( 'single-product/attribute-description-modal.php', array(
+						'message' => '',
+					), '', $this->plugin_path() . '/templates/' );
+				
+			}
 			
 		}
 		
